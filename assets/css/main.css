@@ -1,0 +1,719 @@
+html, body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Header section start */
+#header{
+    padding: 40px;
+    background-color: rgb(0, 0, 0);
+}
+
+#header .logo h2 a{
+    color: #fff;
+    font-size: 32px;
+}
+#header .all{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .all #navList ul li a, i{
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#header .all #navList ul{
+    display: flex;
+}
+
+#header .all #navList ul li{
+    margin-right: 30px;
+    position: relative;
+}
+
+#header .all #navList ul li::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #E9204F;
+    top: 100%;
+    margin-top: 2px;
+    transition: .5s ease;
+}
+#header .all #navList ul li:first-child:before{
+    width: 35%;
+}
+#header .all #navList ul li:first-child:hover::before{
+    width: 35%;
+}
+#header .all #navList ul li:hover::before{
+    width: 100%;
+}
+
+#header .all #navList ul li:last-child:before{
+    width: 0;
+}
+#header .all #navList ul li:last-child:hover::before{
+    width: 0;
+}
+/* Header section end */
+/* ======================== */
+
+/* Digital start */
+#digitalAgency{
+    background-color: #000;
+}
+#digitalAgency .digitalText{
+    margin-top: 90px;
+}
+#digitalAgency .digitalText h1{
+    color: #fff;
+    font-size: 60px;
+    width: 80%;
+    position: relative;
+}
+#digitalAgency .digitalText h1::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #E9204F;
+    top: -20px;
+}
+#digitalAgency .digitalText button{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 60px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #E9204F;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+#digitalAgency .digitalText button::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #E9204F;
+    z-index: -1;
+    transition: .5s ease;
+}
+#digitalAgency .digitalText button:hover::before{
+    width: 100%;
+}
+
+#digitalAgency .digitalPhoto img{
+    width: 100%;
+    height: 800px;
+}
+
+.digitalBoxes .digitalCard{
+    background-color: #1b1b1b;
+    padding: 50px;
+    width: 32%;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    transition: .5s ease;
+}
+.digitalBoxes .digitalCard:hover{
+    background-color: #E9204F;
+}
+.digitalBoxes .digitalCard:first-child{
+    background-color: #E9204F;
+}
+.digitalBoxes .digitalCard .digitalIcon{
+    margin-bottom: 20px;
+}
+.digitalBoxes .digitalCard .digitalIcon i{
+    font-size: 30px;
+}
+.digitalBoxes .digitalCard .digitalTitle h4{
+    font-size: 25px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.digitalBoxes .digitalCard .digitalTitle h4::before{
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 2px;
+    top: 100%;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.digitalBoxes .digitalCard .digitalDesc p{
+    width: 87%;
+    font-weight: 100;
+}
+/* Digital end */
+
+
+#services{
+    margin-top: 70px;
+}
+#services .servicesTitle h1{
+    font-size: 50px;
+    letter-spacing: 1.2px;
+    position: relative;
+}
+#services .servicesTitle h1::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: 0;
+    background-color: #E9204F;
+}
+#services .servicesTitle p{
+    color: #E9204F;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#services .servicesCards{
+    margin-top: 50px;
+    position: relative;
+}
+#services .servicesCards .serviceCard{
+    padding: 20px;
+    background-color: #f3f3f3;
+    width: 32%;
+    transition: .5s ease;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+#services .servicesCards .serviceCard:hover{
+    background-color: #E9204F;
+}
+.services .servicesCards .serviceCard i, h3{
+    transition: .5s ease;
+}
+#services .servicesCards .serviceCard i:first-child{
+    font-size: 60px;
+    transform: scale(0);
+    opacity: 0.6;
+    transition: .5s ease;
+}
+#services .servicesCards .serviceCard h3{
+    font-size: 22px;
+    cursor: pointer;
+    transform: translateX(-120px); 
+}
+#services .servicesCards .serviceCard i{
+    color: rgba(0, 0, 0, 0.692);
+}
+#services .servicesCards .serviceCard:hover h3{
+    color: #fff;
+}
+#services .servicesCards .serviceCard .serviceArrow{
+    transition: .5s ease;
+
+}
+#services .servicesCards .serviceCard:hover .serviceArrow{
+    color: #fff;
+    transform: translateX(20px);
+}
+#services .servicesCards .serviceCard:hover i:first-child{
+    transform: scale(1.2);
+}
+#services .servicesCards .serviceCard:hover h3{
+    transform: translateX(-30px);
+}
+
+
+.servicesCards::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    top: 100%;
+    background-color: #E9204F;
+    left: 50%;
+    transform: translateX(-50px);
+}
+/* work start */
+#work{
+    margin-top: 90px;
+}
+.work .workHead .workHeadTitle h1{
+    font-size: 50px;
+    letter-spacing: 1.2px;
+    position: relative;
+}
+.work .workHead .workHeadTitle h1::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: -20px;
+    background-color: #E9204F;
+}
+#work .workHead .workHeadTitle p{
+    color: #E9204F;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+#work .workHead .workHeadButton a{
+    padding: 15px 30px;
+    border: 2px solid #E9204F;
+    color: #000;
+    position: relative;
+    z-index: 1;
+    transition: .5s ease;
+}
+#work .workHead .workHeadButton a::before{
+    content: '';
+    position: absolute;
+    background-color: #E9204F;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    transition: .5s ease;
+}
+#work .workHead .workHeadButton a:hover::before{
+    width: 100%;
+}
+#work .workHead .workHeadButton a:hover{
+    color: #fff;
+}
+#work .workCards{
+    margin-top: 50px;
+}
+#work .workCards a{
+    width: 32%;
+    height: 450px;
+    overflow: hidden;
+}
+#work .workCards a .workCard{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: .5s ease;
+}
+#work .workCards a .workCard:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+#work .workCards a .workCard .overlay:hover{
+    transform: translateX(10px);
+}
+#work .workCards a .workCard .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    transform: translateX(-40px);
+}
+#work .workCards a .workCard:hover .overlay{
+    transform: translateX(0);
+    opacity: 1;
+}
+#work .workCards a .workCard .overlay .text h3{
+    font-size: 30px;
+}
+#work .workCards a .workCard .overlay .text h3, p{
+    color: #fff;
+}
+/* work end */
+/* ================== */
+
+/* about start */
+#about{
+    margin-top: 200px;
+}
+#about .aboutTitle h1{
+    font-size: 50px;
+    letter-spacing: 1.2px;
+    position: relative;
+}
+#about .aboutTitle h1::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: 10;
+    background-color: #E9204F;
+}
+#about .aboutTitle p{
+    color: #E9204F;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+#about .aboutHead .aboutHeadTwo p{
+    color: rgb(197, 186, 186);
+}
+
+#about .aboutImages a{
+    display: inline-block;
+}
+#about .aboutImages{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#about .aboutImages .aboutImage{
+    width: 60%;
+    height: 600px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+#about .aboutImages .aboutImage a{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: .5s ease;
+}
+#about .aboutImages .aboutImage a:hover{
+    filter: grayscale(0);
+}
+#about .aboutImages .aboutImageTwo{
+    width: 30%;
+    height: 290px;
+    margin-top: 50px;
+}
+#about .aboutImages .aboutImageTwo .Img{
+    margin-bottom: 20px;
+}
+#about .aboutImages .aboutImageTwo a{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: .5s ease;
+}
+#about .aboutImages .aboutImageTwo a:hover{
+    filter: grayscale(0);
+}
+
+#about .aboutImages .aboutCard .overlay{ 
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+#about .aboutImages .overlay .text{
+    color: #fff;
+    font-size: 15px;
+    margin-left: 25px;
+    margin-bottom: 28px;
+}
+
+#about .textHead{
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#about .textHead h1{
+    margin-bottom: 30px;
+    font-size: 23px;
+    font-weight: bolder;
+}
+#about .textHead p{
+    color: rgb(131, 128, 128);
+}
+#about .textHeader{
+    position: relative;
+}
+.textHead::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    top: 100%;
+    left: 50%;
+    background-color: #E9204F;
+}
+/* about end */
+
+#clients{
+    margin-top: 200px;
+}
+#clients .clientHead{
+    display: flex;
+    justify-content: center;
+}
+#clients .clientHead a{
+    display: inline-block;
+}
+#clients .clientHead .photoHead{
+    width: 95%;
+    height: 600px;
+}
+#clients .clientHead .photoHead a{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#clients .clientHead .textHead{
+    margin-left: 90px;
+    width: 100%;
+}
+#clients .clientHead .textHead h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(32, 31, 31);
+    position: relative;
+}
+#clients .clientHead .textHead p{
+    color: #E9204F;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#clients .clientHead .textHead h1::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    color: #E9204F;
+    top: 10;
+}
+#clients .textCard{
+    width: 70%;
+    margin-left: 80px;
+}
+#clients .textCard p{
+    color: #1b1b1b;
+    font-size: 25px;
+}
+#line .lines{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#images .image{
+    display: flex;
+    justify-content: space-between;
+}
+#images .imageHead {
+    display: inline-block;
+}
+#images .image img{
+    margin-right: 70px;
+}
+#news{
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+#news .logo h1{
+    font-size: 49px;
+    font-weight: bold;
+    color: #1b1b1b;
+    margin-bottom: 15px;
+    position: relative;
+}
+#news .logo h1::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 50px;
+    top: 100%;
+    left: 50%;
+    color: #E9204F;
+}
+#news .logo p{
+    color: #E9204F;
+    font-size: 15px;
+    font-weight: bold;
+}
+#news .newsCards{
+    margin-top: 70px;
+}
+#news .newsCards a{
+    width: 32%;
+    height: 450px;
+    overflow: hidden;
+}
+#news .newsCards a .newsCard{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: .5s ease;
+    position: relative;
+}
+#news .newsCards a .newsCard:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+#news .newsCards .overlay:hover{
+    transform: translateX(-10px);
+}
+#news .newsCards a .newsCard .overlay{
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    transform: translateY(40px);
+}
+#news .newsCards a .newsCard:hover .overlay{
+    transform: translateY(0);
+}
+#news .newsCards .newsCard .overlay .text h4{
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+#news .newsCards .newsCard .overlay .text p{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+#news .newsCards .newsCard .overlay .text i{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    margin-top: 20px;
+    transition: .5s ease;
+}
+#news .newsCards .newsCard .overlay .text h4, p{
+    color: #fff;
+}
+#news .newsCards a .newsCard:hover .overlay .text i{
+    opacity: 1;
+}
+
+#talk{
+    margin-top: 90px;
+    background-color: #1b1b1b;
+}
+#talk .talkHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#talk .logo{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+#talk .button a{
+    padding: 20px 40px;
+    border: 2px solid #E9204F;
+    position: relative;
+    z-index: 1;
+    transition: .5s ease;
+    color: #fff;
+    font-weight: bold;
+}
+#talk .button a::before{
+content: '';
+position: absolute;
+background-color: #E9204F;
+left: 0;
+top: 0;
+height: 100%;
+width: 0;
+z-index: -1;
+transition: .5s ease;
+}
+#talk .button a:hover::before{
+    width: 100%;
+}
+#talk .button a:hover{
+    color: #fff;
+}
+#talk .icon i{
+    font-size: 20px;
+    border: 2px solid #E9204F;
+    border-radius: 50%;
+}
+
+#talk .talkCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 90px;
+    cursor: pointer;
+}
+#talk .talkCard:hover{
+    color: #E9204F;
+    transition: .5s ease;
+}
+
+#talk .end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+#talk .end .logoOne{
+    font-size: 7px;
+    color: #fff;
+}
+#talk .end #list ul li a{
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+}
+#talk .end #list ul{
+    display: flex;
+}
+#talk .end #list ul li{
+    margin-right: 30px;
+    position: relative;
+}
+#talk .end #list ul li::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #E9204F;
+    top: 100%;
+    margin-top: 2px;
+    transition: .5s ease;
+}
+#talk .end #list ul li:hover::before{
+    width: 100%;
+}
